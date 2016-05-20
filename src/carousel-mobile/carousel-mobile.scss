@@ -1,0 +1,74 @@
+@import '~sky-toolkit-core/tools';
+
+.panes.wrapper {
+}
+
+.panes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.pane {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+.panes.animate > .pane {
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+
+.pane-item {
+  height: 100%;
+  border: solid 5px color(keyline);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pane-fadein {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
