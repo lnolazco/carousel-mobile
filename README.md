@@ -18,6 +18,7 @@ Add to the project this files:
 - ... hammer-carousel.jsx
 
 Then in your component where you want to insert it add:
+```javascript
 const Carousel = require('../../carousel-mobile/carousel-mobile.jsx');
 ...
 onSelect(index) {
@@ -27,6 +28,7 @@ render() {
   const data = imageUrls.map(image => (<img src={image} />));
   return (<Carousel data={data} onSelect={this.onSelect}>);
 }
+```
 
 ## Properties
 - data, Array of react components to be display in the carousel.
